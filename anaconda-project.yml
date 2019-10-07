@@ -28,10 +28,10 @@ packages: *deps
 
 commands:
   dashboard:
-    unix: panel serve app.ipynb
+    unix: panel serve nyc_taxi.ipynb
     supports_http_options: true
   notebook:
-    notebook: app.ipynb
+    notebook: nyc_taxi.ipynb
   test:
     unix: pytest --nbsmoke-run -k *.ipynb --ignore envs
     windows: pytest --nbsmoke-run -k *.ipynb --ignore envs
